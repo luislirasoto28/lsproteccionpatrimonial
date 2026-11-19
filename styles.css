@@ -1,3 +1,6 @@
+body{
+background:red !important;
+}
 :root{
     --navy:#082C6C;
     --gold:#D4A437;
