@@ -1,1 +1,404 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>LS Protección Patrimonial V9 Enterprise Lead System</title><meta name="description" content="Protección patrimonial y seguros en Querétaro"><style>body{font-family:Arial,sans-serif;margin:0;background:#f5f7fb;color:#222}header{background:#032b6b;color:#fff;padding:15px 5%;position:sticky;top:0}nav{display:flex;justify-content:space-between}nav a{color:#fff;text-decoration:none;margin-left:15px}.hero{padding:80px 5%;background:linear-gradient(135deg,#fff,#e8efff)}h1{color:#032b6b}.btn{background:#d9ab38;color:#fff;padding:12px 20px;border-radius:25px;text-decoration:none;display:inline-block}.section{padding:60px 5%}.card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,.08)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}input,select,textarea{width:100%;padding:12px;margin:8px 0}.footer{background:#021a44;color:#fff;padding:20px;text-align:center}</style></head><body><header><nav><strong>LS Protección Patrimonial</strong><div><a href='#cotizador'>Cotizador</a><a href='#contacto'>Contacto</a></div></nav></header><section class='hero'><h1>V9 Enterprise Lead System</h1><p>Sistema preparado para HubSpot CRM, Calendly, GA4, Meta Pixel y EmailJS.</p><a class='btn' href='#cotizador'>Cotizar Ahora</a></section><section class='section'><div class='card'><h2>Configuración Enterprise</h2><pre>window.LS_CONFIG={GA4_ID:'',META_PIXEL_ID:'',EMAILJS_PUBLIC_KEY:'',EMAILJS_SERVICE_ID:'',EMAILJS_TEMPLATE_ID:'',CALENDLY_URL:'',HUBSPOT_PORTAL_ID:''};</pre></div></section><section id='cotizador' class='section'><div class='card'><h2>Simulador de Cotización</h2><form onsubmit='sendLead(event)'><input id='nombre' placeholder='Nombre'><input id='correo' placeholder='Correo'><input id='telefono' placeholder='Teléfono'><input id='ciudad' placeholder='Ciudad'><select id='seguro'><option>Auto</option><option>Vida</option><option>GMM</option><option>Hogar</option><option>Empresarial</option><option>Retiro</option></select><button class='btn'>Enviar</button></form></div></section><section class='section'><div class='grid'><div class='card'>HubSpot Ready</div><div class='card'>Calendly Ready</div><div class='card'>GA4 Ready</div><div class='card'>Meta Pixel Ready</div></div></section><section id='contacto' class='section'><div class='card'><h2>Lic. Luis Lira Soto</h2><p>4426018510</p><p>ls.proteccionpatrimonial@outlook.com</p></div></section><div class='footer'>LS Protección Patrimonial</div><script>function sendLead(e){e.preventDefault();const lead={nombre:nombre.value,correo:correo.value,telefono:telefono.value,ciudad:ciudad.value,seguro:seguro.value,fecha:new Date().toISOString()};localStorage.setItem('ultimoLead',JSON.stringify(lead));window.open('https://wa.me/524426018510?text='+encodeURIComponent(JSON.stringify(lead)),'_blank');}</script></body></html>
+<header class="header">
+
+<div class="container nav">
+
+<div class="logo">
+<img src="img/logo.jpg">
+</div>
+
+<nav class="menu">
+<a href="#servicios">Servicios</a>
+<a href="#aseguradoras">Aseguradoras</a>
+<a href="#testimonios">Testimonios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<a href="#cotizador" class="btn btn-primary">
+Cotizar
+</a>
+
+</div>
+
+</header>
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="badge">
+PROTECCIÓN PATRIMONIAL
+</span>
+
+<h1>
+Protegemos tu patrimonio,
+tu familia y tu tranquilidad financiera.
+</h1>
+
+<p>
+Soluciones especializadas en seguros de vida,
+gastos médicos, hogar, auto y empresariales.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#cotizador" class="btn btn-primary">
+Solicitar Cotización
+</a>
+
+<a href="https://wa.me/524426018510"
+class="btn btn-secondary">
+WhatsApp
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div>
+<strong>500+</strong>
+<span>Clientes</span>
+</div>
+
+<div>
+<strong>98%</strong>
+<span>Satisfacción</span>
+</div>
+
+<div>
+<strong>24h</strong>
+<span>Respuesta</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<img src="img/logo.jpg">
+
+<div class="partner-mini">
+<img src="img/Allianz.jpg">
+<img src="img/Chubb.png">
+<img src="img/Qualitas.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="aseguradoras" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Aseguradoras Aliadas
+</h2>
+
+<div class="insurance-grid">
+
+<div class="insurance-card card">
+<img src="img/Allianz.jpg">
+</div>
+
+<div class="insurance-card card">
+<img src="img/Chubb.png">
+</div>
+
+<div class="insurance-card card">
+<img src="img/Qualitas.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="servicios" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Soluciones de Protección
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card card">
+<h3>🚗 Seguro de Auto</h3>
+<p>Protección integral para tu vehículo.</p>
+</div>
+
+<div class="service-card card">
+<h3>❤️ Seguro de Vida</h3>
+<p>Respaldo financiero para tu familia.</p>
+</div>
+
+<div class="service-card card">
+<h3>🏥 Gastos Médicos Mayores</h3>
+<p>Acceso a hospitales privados.</p>
+</div>
+
+<div class="service-card card">
+<h3>🏠 Seguro de Hogar</h3>
+<p>Protección patrimonial.</p>
+</div>
+
+<div class="service-card card">
+<h3>🏢 Protección Empresarial</h3>
+<p>Soluciones para empresas.</p>
+</div>
+
+<div class="service-card card">
+<h3>📈 Planes de Retiro</h3>
+<p>Construcción de patrimonio.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<div class="container">
+
+<div class="wealth-grid">
+
+<div class="wealth-image">
+
+<img src="img/familia.jpg">
+
+</div>
+
+<div class="wealth-content">
+
+<span class="wealth-badge">
+
+PROTECCIÓN PATRIMONIAL
+
+</span>
+
+<h2>
+
+Una póliza protege riesgos.
+Una estrategia protege tu patrimonio.
+
+</h2>
+
+<p>
+
+Protegemos tu familia,
+tu salud, tu patrimonio
+y tu futuro financiero.
+
+</p>
+
+<ul>
+
+<li>✅ Protección Familiar</li>
+<li>✅ Protección Empresarial</li>
+<li>✅ Gastos Médicos Mayores</li>
+<li>✅ Planes de Retiro</li>
+<li>✅ Protección Patrimonial</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="cotizador" class="section">
+ 
+<div class="container">
+ 
+<h2 class="section-title">
+Recibe una Propuesta Personalizada
+</h2>
+ 
+<div class="quote-card">
+ 
+<form>
+ 
+<div class="step active">
+ 
+<h3>¿Qué deseas proteger?</h3>
+ 
+<select id="tipoSeguro">
+ 
+<option>Seguro de Auto</option>
+<option>Seguro de Vida</option>
+<option>Gastos Médicos Mayores</option>
+<option>Seguro de Hogar</option>
+<option>Protección Empresarial</option>
+<option>Plan de Retiro</option>
+ 
+</select>
+ 
+</div>
+ 
+<input type="text" placeholder="Nombre completo">
+ 
+<input type="tel" placeholder="Teléfono">
+ 
+<input type="email" placeholder="Correo electrónico">
+ 
+<input type="text" placeholder="Ciudad">
+ 
+<select>
+ 
+<option>Menos de $1,000 MXN</option>
+<option>$1,000-$3,000 MXN</option>
+<option>$3,000-$5,000 MXN</option>
+<option>Más de $5,000 MXN</option>
+ 
+</select>
+ 
+<textarea placeholder="¿Qué deseas proteger?"></textarea>
+ 
+<button class="btn btn-primary">
+Solicitar Cotización
+</button>
+ 
+</form>
+ 
+<div class="quote-trust">
+ 
+<div>✅ Comparativo de aseguradoras</div>
+<div>✅ Atención personalizada</div>
+<div>✅ Respuesta rápida</div>
+<div>✅ Sin compromiso</div>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+</section>
+<section id="testimonios" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Opiniones de Clientes
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p>
+Excelente atención y seguimiento.
+</p>
+
+</div>
+
+<div class="review-card card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p>
+Proceso transparente y profesional.
+</p>
+
+</div>
+
+<div class="review-card card">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p>
+Encontré una cobertura ideal.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Preguntas Frecuentes
+</h2>
+
+<div class="faq-list">
+
+<details>
+<summary>¿La asesoría tiene costo?</summary>
+<p>No. La asesoría es gratuita.</p>
+</details>
+
+<details>
+<summary>¿Comparan aseguradoras?</summary>
+<p>Sí, analizamos distintas alternativas.</p>
+</details>
+
+<details>
+<summary>¿Apoyan durante un siniestro?</summary>
+<p>Sí. Te acompañamos durante todo el proceso.</p>
+</details>
+
+</div>
+
+</div>
+
+</section>
+<footer id="contacto">
+
+<div class="container footer-grid">
+
+<div>
+
+<img src="img/logo.jpg" class="footer-logo">
+
+<p>
+Seguros con claridad.
+</p>
+
+</div>
+
+<div>
+
+<p>📞 442 601 8510</p>
+<p>✉️ ls.proteccionpatrimonial@outlook.com</p>
+<p>📍 Querétaro, México</p>
+
+</div>
+
+<div>
+
+<img src="img/Allianz.jpg">
+
+<img src="img/Chubb.png">
+
+<img src="img/Qualitas.png">
+
+</div>
+
+</div>
+
+</footer>
+
+<a href="https://wa.me/524426018510"
+class="whatsapp">
+💬
+</a>
