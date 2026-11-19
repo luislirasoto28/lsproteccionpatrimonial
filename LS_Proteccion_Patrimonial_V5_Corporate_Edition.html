@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LS Protección Patrimonial | V5 Corporate Edition</title>
+<meta name="description" content="Protección patrimonial, seguros de vida, auto, hogar, gastos médicos y empresariales.">
+<style>
+:root{--azul:#032b6b;--oro:#d9ab38;--bg:#f4f7fb}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:#222}
+header{position:fixed;top:0;width:100%;background:rgba(3,43,107,.95);backdrop-filter:blur(10px);z-index:1000}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 5%}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:120px 5% 60px;background:linear-gradient(135deg,#fff,#e7efff)}
+.logo-main{max-width:500px;width:100%}
+h1{font-size:3.8rem;color:var(--azul)}
+.btn{display:inline-block;padding:14px 26px;border-radius:40px;text-decoration:none;font-weight:700;margin:8px}
+.btn-gold{background:var(--oro);color:white}.btn-blue{background:var(--azul);color:white}
+.section{padding:90px 5%}.title{text-align:center;color:var(--azul);margin-bottom:35px}
+.cards,.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card,.logo-card,.glass{background:rgba(255,255,255,.85);backdrop-filter:blur(14px);border-radius:22px;padding:25px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.logo-card{height:170px;display:flex;align-items:center;justify-content:center}.logo-card img{max-width:180px;max-height:90px;object-fit:contain}
+.counter{font-size:2.5rem;font-weight:800;color:var(--azul)}
+.contact{background:linear-gradient(135deg,var(--azul),#0a4a9f);color:white}
+input,textarea{width:100%;padding:14px;margin:8px 0;border:1px solid #ddd;border-radius:10px}
+button{border:none;cursor:pointer}.wa{position:fixed;right:20px;bottom:20px;width:65px;height:65px;border-radius:50%;background:#25d366;color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:30px}
+footer{background:#021a44;color:#fff;text-align:center;padding:25px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}h1{font-size:2.4rem}}
+</style>
+</head>
+<body>
+<header><nav><div style='color:white;font-weight:bold'>LS Protección Patrimonial</div><div><a href='#servicios'>Servicios</a><a href='#aseguradoras'>Aseguradoras</a><a href='#contacto'>Contacto</a></div></nav></header>
+<section class='hero'>
+<div><h1>Seguros con Claridad</h1><p>Protegemos tu patrimonio, tu familia y tu futuro con soluciones personalizadas.</p><br><a class='btn btn-gold' href='https://wa.me/524426018510'>Cotizar por WhatsApp</a><a class='btn btn-blue' href='#contacto'>Agendar asesoría</a></div>
+<div class='glass'><img src='logo.jpg' class='logo-main'></div>
+</section>
+<section class='section'><div class='cards'><div class='card'><div class='counter'>500+</div>Clientes asesorados</div><div class='card'><div class='counter'>98%</div>Satisfacción</div><div class='card'><div class='counter'>24h</div>Tiempo de respuesta</div></div></section>
+<section id='servicios' class='section'><h2 class='title'>Servicios</h2><div class='cards'><div class='card'>🚗 Seguro de Auto</div><div class='card'>❤️ Seguro de Vida</div><div class='card'>🏥 Gastos Médicos Mayores</div><div class='card'>🏠 Seguro de Hogar</div><div class='card'>🏢 Seguros Empresariales</div><div class='card'>📈 Planes de Retiro</div></div></section>
+<section id='aseguradoras' class='section'><h2 class='title'>Aseguradoras Aliadas</h2><div class='logos'><div class='logo-card'><img src='Qualitas.png'></div><div class='logo-card'><img src='Chubb.png'></div><div class='logo-card'><img src='Allianz.jpg'></div></div></section>
+<section class='section'><h2 class='title'>Testimonios</h2><div class='cards'><div class='card'>★★★★★ Atención profesional y seguimiento constante.</div><div class='card'>★★★★★ Excelente orientación para elegir la cobertura adecuada.</div><div class='card'>★★★★★ Servicio rápido y transparente.</div></div></section>
+<section id='contacto' class='section'><div class='contact glass'><h2>Lic. Luis Lira Soto</h2><p>📞 442 601 8510</p><p>📧 ls.proteccionpatrimonial@outlook.com</p><br><form onsubmit="event.preventDefault();window.open('https://wa.me/524426018510?text=Hola,%20quiero%20una%20cotización.');"><input placeholder='Nombre'><input placeholder='Teléfono'><textarea placeholder='¿Qué seguro buscas?'></textarea><button class='btn btn-gold'>Enviar a WhatsApp</button></form></div></section>
+<footer>© LS Protección Patrimonial | Seguros con Claridad</footer>
+<a class='wa' href='https://wa.me/524426018510'>💬</a>
+</body></html>
